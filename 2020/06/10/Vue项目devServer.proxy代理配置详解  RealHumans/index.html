@@ -7,13 +7,19 @@
 
     
 
-    <title>读书 | blok</title>
+    <title>&#39;Vue项目中devServer.proxy代理&#39; | blok</title>
     <meta name="author" content="John Doe">
+    
+    <meta name="description" content="如果你的前端应用和后端 API 服务器没有运行在同一个主机上，你需要在开发环境下将 API 请求代理到 API 服务器。可以通过  *.config.js 中的 devServer.proxy 选项来配置。
+
+config.js文件中引入依赖项
+
+​    const proxy = require">
     
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <meta property="og:title" content="读书"/>
+    <meta property="og:title" content="&#39;Vue项目中devServer.proxy代理&#39;"/>
     <meta property="og:site_name" content="个人博客"/>
 
     
@@ -190,188 +196,115 @@
 
 
     <main>
+        <div class="container main-container">
+    <nav class="page-nav hide-on-small-only">
+    <div class="nav-wrapper indigo">
+        <span class="breadcrumb">当前位置（分类目录）</span>
+        
+            
+
         
 
-<div class="container main-container">
+        
+    </div>
+</nav>
+
+<article>
+    <div class="card">
+        <div class="card-content">
+            
+
+            <div class="article-title">
+                
     
-        <div class="">
-            <div class="row">
-                <ul class="tabs ">
-                    
-                        
-                        <li class="tab col s4 ">
-                            <a class="pink-text " href="#readed">已读(3)</a>
-                        </li>
-                        
-                    
-                        
-                        <li class="tab col s4 ">
-                            <a class="pink-text " href="#reading">在读(1)</a>
-                        </li>
-                        
-                    
-                        
-                        <li class="tab col s4 ">
-                            <a class="pink-text " href="#wanted">想读(1)</a>
-                        </li>
-                        
-                    
-                </ul>
+        <h1>&#39;Vue项目中devServer.proxy代理&#39;</h1>
+    
+
+
             </div>
+            <time class="pink-link-context" datetime="2020-06-10T03:22:31.000Z"><a href="/2020/06/10/Vue%E9%A1%B9%E7%9B%AEdevServer.proxy%E4%BB%A3%E7%90%86%E9%85%8D%E7%BD%AE%E8%AF%A6%E8%A7%A3%20%20RealHumans/">2020-06-10</a></time>
+
+            <span id="busuanzi_container_page_pv" class="read-times-container">
+    <i class="fa fa-eye"></i>
+    <span id="busuanzi_value_page_pv"></span>
+</span>
 
             
-                <div id="readed" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s23139051.jpg">
-                                </div>
-                                <div class="card-content pink-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">众妙之门：网站UI设计之道
-                                    </span>
-                                    <p>评分: 7
-                                        <a class="external-link right" href="http://book.douban.com/subject/20281463/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>推荐非UI人士了解UI阅读。</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img5.douban.com/lpic/s11337059.jpg">
-                                </div>
-                                <div class="card-content pink-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript模式
-                                    </span>
-                                    <p>评分: 8.5
-                                        <a class="external-link right" href="http://book.douban.com/subject/11506062/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>书很薄，但内容相当实用。</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img3.douban.com/lpic/s11373174.jpg">
-                                </div>
-                                <div class="card-content pink-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">JavaScript语言精粹
-                                    </span>
-                                    <p>评分: 9.5
-                                        <a class="external-link right" href="http://book.douban.com/subject/11874748/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p>这是一本前端人员的基础书，强烈推荐阅读，而且越早看受益越多！</p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-                <div id="reading" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s27881888.jpg">
-                                </div>
-                                <div class="card-content pink-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">网络游戏核心技术与实战
-                                    </span>
-                                    <p>评分: ???
-                                        <a class="external-link right" href="http://book.douban.com/subject/25850090/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-                <div id="wanted" class="row" style="margin-top: 20px;">
-                    
-                    
-                        <div class="book-item col s12 m6">
-                            <div class="card small hoverable">
-                                <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="card-cover-image activator" src="http://img4.douban.com/lpic/s1113106.jpg">
-                                </div>
-                                <div class="card-content pink-link-context">
-                                    <span class="card-title truncate activator grey-text text-darken-4">计算机程序的构造和解释
-                                    </span>
-                                    <p>评分: ???
-                                        <a class="external-link right" href="http://book.douban.com/subject/1148282/" target="_blank">
-
-                                            <i class="fa fa-external-link"></i>
-                                        </a>
-                                    </p>
-                                </div>
-
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">简评
-                                        <i class="fa fa-times-circle-o right"></i>
-                                    </span>
-
-                                    <p></p>
-                                </div>
-                            </div>
-                        </div>
-                    
-                </div>
-            
-
-        </div>
+    <div class="tags-row">
         
+            <a href="/tags/Vue/" class="chip pink lighten-1">Vue</a>
+        
+    </div>
+
+
+            <div class="toc pink-link-context hide-on-med-and-down">
+    <ol class="section table-of-contents"><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#vue-config-js"><span class="section table-of-contents-text">vue.config.js</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#devServer"><span class="section table-of-contents-text">devServer</span></a></li><li class="section table-of-contents-item section table-of-contents-level-3"><a class="section table-of-contents-link" href="#devServer-proxy"><span class="section table-of-contents-text">devServer.proxy</span></a></li></ol>
+</div>
+
+
+            <div class="entry pink-link-context">
+                <p>如果你的前端应用和后端 API 服务器没有运行在同一个主机上，你需要在开发环境下将 API 请求代理到 API 服务器。可以通过  *.config.js 中的 devServer.proxy 选项来配置。</p>
+<ul>
+<li>config.js文件中引入依赖项</li>
+</ul>
+<p>​    <code>const proxy = require(&#39;http-proxy-middleware&#39;);</code></p>
+<ul>
+<li><p>devServer.proxy 可以是一个指向开发环境 API 服务器的字符串</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;服务器会将任何未知请求 (没有匹配到静态文件的请求) 代理到http:&#x2F;&#x2F;localhost:4000上</span><br><span class="line">module.exports &#x3D; &#123;</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    proxy: &#39;http:&#x2F;&#x2F;localhost:4000&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>更多的代理控制行为：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> proxy = require(<span class="string">'http-proxy-middleware'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">module</span>.<span class="keyword">exports</span> = &#123;   </span><br><span class="line">devServer:&#123;</span><br><span class="line">    host: <span class="string">'localhost'</span>,<span class="comment">//target host</span></span><br><span class="line">    port: <span class="number">8080</span>,</span><br><span class="line">    <span class="comment">//proxy:&#123;'/api':&#123;&#125;&#125;,代理器中设置/api,项目中请求路径为/api的替换为target</span></span><br><span class="line">    proxy:&#123;</span><br><span class="line">        <span class="string">'/api'</span>:&#123;</span><br><span class="line">            target: <span class="string">'http://192.168.1.30:8085'</span>,<span class="comment">//代理地址，这里设置的地址会代替axios中设置的baseURL</span></span><br><span class="line">            changeOrigin: <span class="keyword">true</span>,<span class="comment">// 如果接口跨域，需要进行这个参数配置</span></span><br><span class="line">            <span class="comment">//ws: true, // proxy websockets</span></span><br><span class="line">            <span class="comment">//pathRewrite方法重写url</span></span><br><span class="line">            pathRewrite: &#123;</span><br><span class="line">                <span class="string">'^/api'</span>: <span class="string">'/'</span> </span><br><span class="line">                <span class="comment">//pathRewrite: &#123;'^/api': '/'&#125; 重写之后url为 http://192.168.1.16:8085/xxxx</span></span><br><span class="line">                <span class="comment">//pathRewrite: &#123;'^/api': '/api'&#125; 重写之后url为 http://192.168.1.16:8085/api/xxxx</span></span><br><span class="line">           &#125;</span><br><span class="line">    &#125;&#125;</span><br><span class="line">&#125;,</span><br><span class="line"><span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
 
-    
+</li>
+</ul>
+<h3 id="vue-config-js"><a href="#vue-config-js" class="headerlink" title="vue.config.js"></a>vue.config.js</h3><p><code>vue.config.js</code> 是一个可选的配置文件，如果项目的 (和 <code>package.json</code> 同级的) 根目录中存在这个文件，那么它会被 <code>@vue/cli-service</code> 自动加载。你也可以使用 <code>package.json</code> 中的 <code>vue</code> 字段，但是注意这种写法需要你严格遵照 JSON 的格式来写。</p>
+<p>这个文件应该导出一个包含了选项的对象：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// vue.config.js</span></span><br><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  <span class="comment">// 选项...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="devServer"><a href="#devServer" class="headerlink" title="devServer"></a>devServer</h3><p>Type: <code>Object</code></p>
+<p><a href="https://webpack.js.org/configuration/dev-server/" target="_blank" rel="noopener">所有 <code>webpack-dev-server</code> 的选项</a>都支持。注意：</p>
+<ul>
+<li><p>有些值像 <code>host</code>、<code>port</code> 和 <code>https</code> 可能会被命令行参数覆写。</p>
+</li>
+<li><p>有些值像 <code>publicPath</code> 和 <code>historyApiFallback</code> 不应该被修改，因为它们需要和开发服务器的 <a href="https://cli.vuejs.org/zh/config/#baseurl" target="_blank" rel="noopener">publicPath</a> 同步以保障正常的工作。</p>
+<h3 id="devServer-proxy"><a href="#devServer-proxy" class="headerlink" title="devServer.proxy"></a>devServer.proxy</h3><p>Type: <code>string | Object</code></p>
+<p>如果你的前端应用和后端 API 服务器没有运行在同一个主机上，你需要在开发环境下将 API 请求代理到 API 服务器。这个问题可以通过 <code>vue.config.js</code> 中的 <code>devServer.proxy</code> 选项来配置。</p>
+<p><code>devServer.proxy</code> 可以是一个指向开发环境 API 服务器的字符串：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    proxy: <span class="string">'http://localhost:4000'</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>这会告诉开发服务器将任何未知请求 (没有匹配到静态文件的请求) 代理到<code>http://localhost:4000</code>。</p>
+<p>如果你想要更多的代理控制行为，也可以使用一个 <code>path: options</code> 成对的对象。完整的选项可以查阅 <a href="https://github.com/chimurai/http-proxy-middleware#proxycontext-config" target="_blank" rel="noopener">http-proxy-middleware</a> 。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">module</span>.exports = &#123;</span><br><span class="line">  devServer: &#123;</span><br><span class="line">    proxy: &#123;</span><br><span class="line">      <span class="string">'/api'</span>: &#123;</span><br><span class="line">        target: <span class="string">'&lt;url&gt;'</span>,</span><br><span class="line">        ws: <span class="literal">true</span>,</span><br><span class="line">        changeOrigin: <span class="literal">true</span></span><br><span class="line">      &#125;,</span><br><span class="line">      <span class="string">'/foo'</span>: &#123;</span><br><span class="line">        target: <span class="string">'&lt;other_url&gt;'</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<p>作者：RealHumans<br>链接：<a href="https://www.jianshu.com/p/8493282fe232" target="_blank" rel="noopener">https://www.jianshu.com/p/8493282fe232</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+
+                
+
+
+<p class="pink-link-context">
+    <a href="/2020/06/09/HTTP%E5%8D%8F%E8%AE%AE/" rel="next" title="&#39;HTTP协议&#39;">
+    下一篇：&#39;HTTP协议&#39;
+  </a>
+</p>
+
+
+            </div>
+			
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
 </div>
 
         <div class="fixed-action-btn float-sitemap">
